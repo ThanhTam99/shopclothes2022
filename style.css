@@ -16,6 +16,97 @@
     display: flex;
 }
 
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ------------------Heaer */
+header {
+    position: fixed;
+    height: 80px;
+    z-index: 1000;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.header-content {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content-logo {
+    width: 20%;
+}
+
+.header-content-logo img {
+    width: 100px;
+    height: -webkit-fill-available;
+}
+
+.header-content-nav {
+    width: 50%;
+}
+
+.header-content-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content-nav ul li {
+    margin-right: 12px;
+}
+
+.header-content-nav ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.header-content-nav ul li:hover a {
+    color: #82c1de;
+}
+
+.header-content-search {
+    width: 20%;
+}
+
+.header-content-search input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #dddd;
+}
+
+.header-content-search i {
+    cursor: pointer;
+}
+
+.header-content-icon {
+    width: 10%;
+}
+
+.header-content-icon img {
+    width: 20px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+/* ------------------Slider */
+.slider {
+    margin-top: 80px;
+}
+
 .slider-content-item {
     height: 100vh;
     width: 100vw;
@@ -192,10 +283,6 @@ p {
 }
 
 /* -----------------Product ---------------*/
-.container {
-    max-width: 1024px;
-    margin: auto;
-}
 
 .title-h1 {
     text-align: center;
@@ -319,4 +406,57 @@ p {
 
 .product-items {
     margin-bottom: 50px;
+}
+
+/* ------------------------Blog */
+.blog-content{
+    justify-content: space-between;
+}
+.blog-content-item{
+    width: 30%;
+    height: 300px;
+}
+.blog-content-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* -----------------------Footer */
+footer{
+    background-color: #e4e4e4;
+    margin-top: 100px;
+    padding: 50px 0 10px;
+}
+footer p{
+    color: #333;
+}
+.footer-content{
+    justify-content: space-between;
+}
+.footer-content h3 {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.footer-content p {
+    margin-bottom: 6px;
+}
+.footer-content-social{
+    text-align: center;
+    padding: 50px 0 20px;
+}
+.footer-content-social i{
+    font-size: 20px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.footer-copyright {
+    text-align: center;
+}
+.footer-image {
+    text-align: center;
+}
+.footer-image img{
+    width: 150px;
 }
